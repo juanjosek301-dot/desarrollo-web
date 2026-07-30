@@ -1,0 +1,304 @@
+/*==========================================
+        VARIABLES GENERALES
+==========================================*/
+
+:root{
+
+    --color-principal:#2563eb;
+    --color-secundario:#1e40af;
+    --color-fondo:#eef2f7;
+    --color-sidebar:#1e293b;
+    --color-tarjeta:#ffffff;
+    --color-texto:#333333;
+    --color-blanco:#ffffff;
+
+}
+
+/*==========================================
+        ESTILOS GENERALES
+==========================================*/
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+
+    font-family:Arial, Helvetica, sans-serif;
+    background:var(--color-fondo);
+    color:var(--color-texto);
+
+}
+
+/*==========================================
+        CONTENEDOR PRINCIPAL
+==========================================*/
+
+.contenedor{
+
+    width:1100px;
+    margin:40px auto;
+
+    display:flex;
+
+    border-radius:15px;
+
+    overflow:hidden;
+
+    box-shadow:0px 10px 25px rgba(0,0,0,.20);
+
+}
+
+/*==========================================
+        BARRA LATERAL
+==========================================*/
+
+.sidebar{
+
+    width:320px;
+
+    background:var(--color-sidebar);
+
+    color:var(--color-blanco);
+
+    padding:30px;
+
+}
+
+/*==========================================
+        FOTO
+==========================================*/
+
+.foto{
+
+    width:180px;
+
+    height:180px;
+
+    border-radius:50%;
+
+    display:block;
+
+    margin:auto;
+
+    border:5px solid white;
+
+    object-fit:cover;
+
+}
+
+/*==========================================
+        NOMBRE
+==========================================*/
+
+.sidebar h1{
+
+    text-align:center;
+
+    margin-top:20px;
+
+}
+
+.sidebar h3{
+
+    text-align:center;
+
+    margin-top:10px;
+
+    font-weight:normal;
+
+    color:#cbd5e1;
+
+}
+
+/*==========================================
+        TITULOS LATERALES
+==========================================*/
+
+.sidebar h2{
+
+    margin-top:35px;
+
+    margin-bottom:15px;
+
+    border-bottom:2px solid white;
+
+    padding-bottom:8px;
+
+}
+
+/*==========================================
+        CONTACTO
+==========================================*/
+
+.sidebar p{
+
+    margin-bottom:12px;
+
+    line-height:1.7;
+
+}
+
+/*==========================================
+        LISTAS
+==========================================*/
+
+.sidebar ul{
+
+    list-style:none;
+
+}
+
+.sidebar li{
+
+    margin-bottom:12px;
+
+}
+
+/*==========================================
+        ENLACES
+==========================================*/
+
+.sidebar a{
+
+    color:white;
+
+    text-decoration:none;
+
+    transition:.3s;
+
+}
+
+.sidebar a:hover{
+
+    color:#60a5fa;
+
+    padding-left:10px;
+
+}
+
+/*==========================================
+        ICONOS
+==========================================*/
+
+.sidebar i{
+
+    margin-right:10px;
+
+    color:#60a5fa;
+
+}
+
+/*==========================================
+        CONTENIDO
+==========================================*/
+
+.contenido{
+
+    flex:1;
+
+    padding:35px;
+
+    background:#f8fafc;
+
+}
+
+/*==========================================
+        TARJETAS
+==========================================*/
+
+.card{
+
+    background:white;
+
+    margin-bottom:25px;
+
+    padding:25px;
+
+    border-radius:12px;
+
+    box-shadow:0px 5px 15px rgba(0,0,0,.08);
+
+    transition:.4s;
+
+}
+
+/*==========================================
+        EFECTO TARJETA
+==========================================*/
+
+.card:hover{
+
+    transform:translateY(-6px);
+
+    box-shadow:0px 10px 25px rgba(0,0,0,.15);
+
+}
+
+/*==========================================
+        TITULOS
+==========================================*/
+
+.card h2{
+
+    color:var(--color-principal);
+
+    margin-bottom:15px;
+
+    border-bottom:3px solid var(--color-principal);
+
+    padding-bottom:8px;
+
+}
+
+/*==========================================
+        PARRAFOS
+==========================================*/
+
+.card p{
+
+    text-align:justify;
+
+    line-height:1.8;
+
+}
+
+/*==========================================
+        LISTAS
+==========================================*/
+
+.card ul{
+
+    padding-left:20px;
+
+}
+
+.card li{
+
+    margin-bottom:10px;
+
+}
+
+/*==========================================
+        RESPONSIVE
+==========================================*/
+
+@media(max-width:900px){
+
+.contenedor{
+
+    width:95%;
+
+    flex-direction:column;
+
+}
+
+.sidebar{
+
+    width:100%;
+
+}
+
+}
